@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn clean install'
+        sh '''cd devops_ci/billing/
+mvn clean install'''
       }
     }
 
